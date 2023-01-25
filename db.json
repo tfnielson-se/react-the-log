@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Thomas N",
+      "activity": "Rafting",
+      "date": "04/18/2022",
+      "location": "Buena Vista",
+      "state": "CO",
+      "description": "great time with friends, amazing rapids",
+      "notes": "class 3",
+      "likes": 3,
+      "image": "./src/images/raft.jpg"
+    },
+    {
+      "id": 1,
+      "name": "Cam L",
+      "activity": "Mountain-Biking",
+      "date": "09/10/2022",
+      "location": "Grand Junction",
+      "state": "CO",
+      "description": "great time with friends, amazing terrain",
+      "notes": "blue run",
+      "likes": 1,
+      "image": "./src/images/biking.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Kevin D",
+      "activity": "Climbing",
+      "date": "10/22/2022",
+      "location": "Golden",
+      "state": "CO",
+      "description": "great time with friends, amazing rocks",
+      "notes": "5.6 run",
+      "likes": 3,
+      "image": "./src/images/climbing.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Zoe A",
+      "activity": "Fishing",
+      "date": "3/11/2022",
+      "location": "Glenwood Springs",
+      "state": "CO",
+      "description": "great time with friends, amazing fish",
+      "notes": "cold water",
+      "likes": 1,
+      "image": "./src/images/fish.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kyra D",
+      "activity": "Surfing",
+      "date": "07/24/2022",
+      "location": "Denver",
+      "state": "CO",
+      "description": "great time with friends, amazing waves",
+      "notes": "good release",
+      "likes": 2,
+      "image": "./src/images/surf.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Zack K",
+      "activity": "Kayaking",
+      "date": "09/10/2022",
+      "location": "Buena Vista",
+      "state": "CO",
+      "description": "great time with friends, amazing rapids",
+      "notes": "class 4",
+      "likes": 2,
+      "image": "./src/images/kayaking.jpg"
+    },
+    {
+      "id": 6,
+      "name": "@gimblegod69",
+      "activity": "Snowboarding",
+      "date": "08/10/2021",
+      "location": "Grand Junction",
+      "state": "CO",
+      "description": "great time with friends, amazing terrain",
+      "notes": "blue run",
+      "likes": 1,
+      "image": "./src/images/snow.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Cam L",
+      "activity": "Fishing",
+      "date": "09/11/2022",
+      "location": "Grand Junction",
+      "state": "CO",
+      "description": "great time with friends, amazing fish",
+      "notes": "blue water",
+      "likes": 1,
+      "image": "./src/images/fishing.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Thomas N",
+      "activity": "Surfing",
+      "date": "10/30/2022",
+      "location": "Denver",
+      "state": "CO",
+      "description": "great time with friends, amazing waves",
+      "notes": "cold af",
+      "likes": 1,
+      "image": "./src/images/surfing.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Eric R",
+      "activity": "Rafting",
+      "date": "06/2/2022",
+      "location": "Petaluma",
+      "state": "CA",
+      "description": "great time with friends, amazing rapids",
+      "notes": "class 3",
+      "likes": 6,
+      "image": "./src/images/rafting.jpeg"
+    },
+    {
+      "name": "Dane J",
+      "activity": "Kayaking",
+      "date": "04/20/2020",
+      "location": "BV",
+      "state": "",
+      "description": "very high",
+      "notes": "cold flow",
+      "likes": 1,
+      "image": "https://in4adventure.com/wp-content/uploads/2022/09/jackson-kayak-rockstar-v-featured-image-ken-whiting-whitewater-kayaking-paddletv-in4adventure.png",
+      "id": 10
+    }
+  ]
+}
