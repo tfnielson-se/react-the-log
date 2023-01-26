@@ -33,7 +33,7 @@ const LogCard = ({ log, logsUpdate }) => {
 			.then((updatedLog) => logsUpdate(updatedLog));
 	};
 
-	const editMode = () => {};
+	// const editMode = () => {};
 
 	return (
 		<div className="card w-96 shadow-xl mb-5">
@@ -59,14 +59,14 @@ const LogCard = ({ log, logsUpdate }) => {
 					onClick={handleLikeCount}
 				/>
 				<span> </span>
-				<Link to="/logs/:id/edit">
+				{/* <Link to="/logs/:id/edit">
 					<Button
 						className="editbtn btn btn-outline"
 						textContent={"Edit"}
 						emoji={"✍️"}
 						onClick={editMode}
 					/>
-				</Link>
+				</Link> */}
 			</div>
 			<br />
 		</div>
