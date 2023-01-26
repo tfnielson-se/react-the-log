@@ -13,7 +13,7 @@ const LogForm = ({ onAddNewLog }) => {
 		description: "",
 		notes: "",
 		likes: 0,
-		image: "",
+		image: "https://cdn.britannica.com/06/234806-050-49A67E27/SPAM-can.jpg",
 	};
 
 	const history = useHistory();
@@ -44,53 +44,71 @@ const LogForm = ({ onAddNewLog }) => {
 
 	// JSX
 	return (
-		<div className="formcard">
-			<h3> Share your experience with us:</h3>
-			<form onSubmit={handleSubmitLog} className="experience-form">
-				<label for="pet-select">Choose an activity:</label>
-				<br />
-				<select
-					name="activity"
-					id="activity-select"
-					onChange={(e) =>
-						setFormData({ ...formData, activity: e.target.value })
-					}
-				>
-					<option value="">--Please choose an option--</option>
-					<option value="Rafting">Rafting</option>
-					<option value="Mountain-Biking">Mountain-Biking</option>
-					<option value="Climbing">Climbing</option>
-					<option value="Fishing">Fishing</option>
-					<option value="Surfing">Surfing</option>
-					<option value="Kayaking">Kayaking</option>
-				</select>
-				<br />
-				<label>Date:</label>
+		<div className="flex justify-center max-w-sm shadow-2xl bg-gray-400 mx-20 my-5">
+			<form onSubmit={handleSubmitLog} className="card-body gap-0">
+			<h3 className="pt-2"> New Log 🪵</h3>
+				<div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Activity</span>
+					</label>
+					<select
+						name="activity"
+						id="activity"
+						className="input input-bordered"
+						onChange={(e) =>
+							setFormData({
+								...formData,
+								activity: e.target.value,
+							})
+						}
+					>
+						<option value="">--Please choose an option--</option>
+						<option value="Rafting">Rafting</option>
+						<option value="Mountain-Biking">Mountain-Biking</option>
+						<option value="Climbing">Climbing</option>
+						<option value="Fishing">Fishing</option>
+						<option value="Surfing">Surfing</option>
+						<option value="Kayaking">Kayaking</option>
+					</select>
+				</div>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Date</span>
+					</label>
+                </div>
 				<input
 					type="text"
 					id="date"
 					name="date"
+					className="input input-bordered"
 					placeholder="MM/DD/YYYY"
 					value={date}
 					onChange={(e) =>
 						setFormData({ ...formData, date: e.target.value })
 					}
 				></input>
-				<br />
-				<label>Location:</label>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Location</span>
+					</label>
+				</div>
 				<input
 					type="text"
 					id="location"
 					name="location"
+					className="input input-bordered"
 					placeholder="activity's location here..."
 					value={location}
 					onChange={(e) =>
 						setFormData({ ...formData, location: e.target.value })
 					}
 				></input>
-				<br />
-				<label>State:</label>
-				<select name="state">
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">State</span>
+					</label>
+				</div>
+				<select name="state" className="input input-bordered">
 					<option value="default">--</option>
 					<option value="AL">AL</option>
 					<option value="AK">AK</option>
@@ -144,12 +162,16 @@ const LogForm = ({ onAddNewLog }) => {
 					<option value="WI">WI</option>
 					<option value="WY">WY</option>
 				</select>
-				<br />
-				<label>Description:</label>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Description</span>
+					</label>
+				</div>
 				<textarea
 					type="text"
 					id="description"
 					name="description"
+					className="input input-bordered"
 					placeholder="activity's description here..."
 					value={description}
 					onChange={(e) =>
@@ -159,51 +181,63 @@ const LogForm = ({ onAddNewLog }) => {
 						})
 					}
 				></textarea>
-				<br />
-				<label>Notes:</label>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Notes</span>
+					</label>
+				</div>
 				<textarea
 					type="text"
 					id="notes"
 					name="notes"
+					className="input input-bordered"
 					placeholder="activity's notes here..."
 					value={notes}
 					onChange={(e) =>
 						setFormData({ ...formData, notes: e.target.value })
 					}
 				></textarea>
-				<br /> <br />
-				<label>Your Name:</label>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Name</span>
+					</label>
+				</div>
 				<input
 					type="text"
 					id="name"
 					name="name"
+					className="input input-bordered"
 					placeholder="type your name here..."
 					value={name}
 					onChange={(e) =>
 						setFormData({ ...formData, name: e.target.value })
 					}
 				/>
-				<br />
-				<label>Image:</label>
+                <div className="form-control">
+					<label className="label">
+						<span className="label-text text-black">Username</span>
+					</label>
 				<input
 					type="text"
 					id="image"
 					name="image"
+					className="input input-bordered"
 					placeholder="img url..."
 					value={image}
 					onChange={(e) =>
 						setFormData({ ...formData, image: e.target.value })
 					}
 				/>
-				<br />
+                </div>
+                <br />
+                <div className="form-control">
 				<input
 					className="btn btn-success"
 					type="submit"
 					name="submit"
 					id="submit"
 				></input>
-				<br />
-				<br />
+                </div>
 			</form>
 		</div>
 	);

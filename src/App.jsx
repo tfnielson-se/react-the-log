@@ -54,7 +54,6 @@ function App() {
 					<LogForm onAddNewLog={addNewLog} />
 				</Route>
 				<Route path="/logs/:id/edit">
-                {/* <EditLog/> */}
             </Route>
 			</Switch>
 		</div>

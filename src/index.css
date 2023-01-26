@@ -50,37 +50,3 @@ h1 {
 	background: white;
 }
 
-select {
-	background: rgba(255, 255, 255, 0.837);
-	border-radius: 10px;
-	text-align: center;
-	width: 300px;
-    height: 20px;
-}
-
-input {
-	margin-bottom: 5px;
-	background: rgba(255, 255, 255, 0.837);
-	border-radius: 10px;
-	width: 300px;
-    height: 20px;
-    text-align: center;
-}
-
-textarea {
-    margin-bottom: 5px;
-	background: rgba(255, 255, 255, 0.837);
-	border-radius: 10px;
-    height: 100px;
-    inline-size: 300px;
-    word-wrap: break-word;
-    word-break: break-all;
-    text-align: center;
-}
-
-.formcard {
-	background: rgb(119, 119, 119);
-	margin: auto;
-	margin-top: 2em;
-    border-radius: 10em;
-}

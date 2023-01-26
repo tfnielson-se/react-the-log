@@ -4,7 +4,7 @@ import LogCard from "./LogCard";
 
 const Logs = ({ logs, logsUpdate }) => {
 	const [filteredLogs, setFilteredLogs] = useState(logs);
-	const [filter, setFilter] = useState("All");
+	const [filter, setFilter] = useState("");
 	// console.log(logs)
 	console.log(filter);
 	console.log(filteredLogs);
@@ -28,8 +28,9 @@ const Logs = ({ logs, logsUpdate }) => {
 		<>
 			<br />
 			<p className="text-white">Filter by Activity:</p>
+            <div className="pt-2">
 			<select
-				className="activity-select"
+				className="input input-bordered bg-gray-200"
 				name="activity"
 				value={filter}
 				onChange={(e) => setFilter(e.target.value)}
@@ -43,6 +44,7 @@ const Logs = ({ logs, logsUpdate }) => {
 				<option value="Kayaking">Kayaking</option>
 				<option value="All">All</option>
 			</select>
+            </div>
 			<br />
 			<br />
 			<div className="logs">{displayLogs}</div>
